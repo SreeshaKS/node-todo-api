@@ -31,16 +31,18 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db) => {
   // });
 
   //deleteOne
-  db.collection('Todos')
-    .deleteOne({
-      text: 'Eat Lunch'
-    })
-    .then((result) => {
-      console.log(result);
-    });
-  //findOneAndDelete
-  db.collection('Todos').findOneAndDelete({
-    completed:'false'
-  })
+  // db.collection('Todos')
+  //   .deleteOne({
+  //     text: 'Eat Lunch'
+  //   })
+  //   .then((result) => {
+  //     console.log(result);
+  //   });
+  // //findOneAndDelete
+  // db.collection('Todos').findOneAndDelete({
+  //   completed:'false'
+  // }).then(()=>{
+  //   console.log(result);
+  // });
   //db.close();
 });
